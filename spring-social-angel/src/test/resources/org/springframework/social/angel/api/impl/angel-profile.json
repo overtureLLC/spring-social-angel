@@ -1,0 +1,40 @@
+
+{
+    "name": "Naval Ravikant",
+    "id": 155,
+    "bio": "Sweat - AngelList, Venture Hacks, Vast, Epinions; Money - Twitter, Heyzap, SnapLogic",
+    "blog_url": "http://startupboy.com/",
+    "online_bio_url": "http://startupboy.com/about/",
+    "twitter_url": "http://twitter.com/naval",
+    "facebook_url": "http://www.facebook.com/navalr",
+    "linkedin_url": "http://www.linkedin.com/in/navalr",
+    "follower_count": 13375,
+    "investor": true,
+    "locations": [
+        {
+            "id": 1692,
+            "tag_type": "LocationTag",
+            "name": "san francisco",
+            "display_name": "San Francisco",
+            "angellist_url": "http://angel.co/san-francisco"
+        }
+    ],
+    "roles": [
+        {
+            "id": 9305,
+            "tag_type": "RoleTag",
+            "name": "seed funds",
+            "display_name": "Seed Fund",
+            "angellist_url": "http://angel.co/seed-funds"
+        },
+        {
+            "id": 14725,
+            "tag_type": "RoleTag",
+            "name": "entrepreneur",
+            "display_name": "Entrepreneur",
+            "angellist_url": "http://angel.co/entrepreneur-1"
+        }
+    ],
+    "angellist_url": "http://angel.co/naval",
+    "image": "https://s3.amazonaws.com/photos.angel.co/users/155-medium?1308634544"
+}
