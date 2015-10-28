@@ -14,6 +14,16 @@ public interface Angel extends ApiBinding{
     UserOperations userOperations();
 
     /**
+     * @return the portion of the Angel API containing the role operations.
+     */
+    RoleOperations roleOperations();
+
+    /**
+     * @return the portion of the Angel API containing the startUp operations.
+     */
+    StartUpOperations startupOperations();
+
+    /**
      * Returns the underlying {@link RestOperations} object allowing for consumption of AngelList endpoints that may not be otherwise covered by the API binding.
      * The RestOperations object returned is configured to include an OAuth "Authorization" header on all requests.
      * @return a RestOperations object instrumented for including an OAuth Authorization header on requests.

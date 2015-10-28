@@ -2,9 +2,11 @@ package org.springframework.social.angel.api;
 
 import org.springframework.social.ApiException;
 import org.springframework.social.MissingAuthorizationException;
+import org.springframework.social.angel.api.impl.model.AngelProfile;
+import org.springframework.social.angel.api.impl.model.AngelStartUpRole;
+import org.springframework.social.angel.api.impl.model.PagedList;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by ryo on 10/25/15.
@@ -35,6 +37,16 @@ public interface UserOperations {
      * @throws MissingAuthorizationException if AngelListTemplate was not created with OAuth credentials or an application access token.
      */
     AngelProfile getUserProfile(long userId);
+
+    /**
+     * Retrieves a specific user's AngelList startup_roles details.
+     * Supports either user or application authorization.
+     * @param userId the user ID for the user whose details are to be retrieved.
+     * @return a {@link AngelStartUpRole} object representing the user's roles.
+     * @throws ApiException if there is an error while communicating with AngelList.
+     * @throws MissingAuthorizationException if AngelListTemplate was not created with OAuth credentials or an application access token.
+     */
+    PagedList<AngelStartUpRole> getUserRoles(long userId);
 
     /**
      * Searches for up to 20 users that match a given query.

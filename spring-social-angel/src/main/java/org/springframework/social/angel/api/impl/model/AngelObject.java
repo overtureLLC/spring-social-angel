@@ -1,4 +1,4 @@
-package org.springframework.social.angel.api;
+package org.springframework.social.angel.api.impl.model;
 
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 

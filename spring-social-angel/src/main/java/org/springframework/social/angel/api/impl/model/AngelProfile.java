@@ -1,7 +1,4 @@
-package org.springframework.social.angel.api;
-
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
+package org.springframework.social.angel.api.impl.model;
 
 import java.io.Serializable;
 import java.util.List;
@@ -18,13 +15,13 @@ public class AngelProfile extends AngelObject implements Serializable {
     private final long id;
     private final String image;
     private final String bio;
-    private String blog_url;
-    private String online_bio_url;
-    private String twitter_url;
-    private String facebook_url;
-    private String linkedin_url;
-    private String angellist_url;
-    private int follower_count;
+    private String blogUrl;
+    private String onlineBioUrl;
+    private String twitterUrl;
+    private String facebookUrl;
+    private String linkedinUrl;
+    private String angellistUrl;
+    private int followerCount;
     private boolean investor;
     private List roles;
     private List locations;
@@ -54,33 +51,33 @@ public class AngelProfile extends AngelObject implements Serializable {
     public String getBio() {
         return bio;
     }
-    public String getBlog_url() {
-        return blog_url;
+
+    public String getBlogUrl() {
+        return blogUrl;
     }
 
-    public String getOnline_bio_url() {
-        return online_bio_url;
+    public String getOnlineBioUrl() {
+        return onlineBioUrl;
     }
 
-     public String getTwitter_url() {
-        return twitter_url;
+    public String getTwitterUrl() {
+        return twitterUrl;
     }
 
-    public String getFacebook_url() {
-        return facebook_url;
+    public String getFacebookUrl() {
+        return facebookUrl;
     }
 
-
-    public String getLinkedin_url() {
-        return linkedin_url;
+    public String getLinkedinUrl() {
+        return linkedinUrl;
     }
 
-    public String getAngellist_url() {
-        return angellist_url;
+    public String getAngellistUrl() {
+        return angellistUrl;
     }
 
-    public int getFollower_count() {
-        return follower_count;
+    public int getFollowerCount() {
+        return followerCount;
     }
 
     public boolean isInvestor() {
@@ -119,25 +116,25 @@ public class AngelProfile extends AngelObject implements Serializable {
         if (bio != that.bio) {
             return false;
         }
-        if (blog_url != that.blog_url) {
+        if (blogUrl != that.blogUrl) {
             return false;
         }
-        if (online_bio_url != that.online_bio_url) {
+        if (onlineBioUrl != that.onlineBioUrl) {
             return false;
         }
-        if (twitter_url != that.twitter_url) {
+        if (twitterUrl != that.twitterUrl) {
             return false;
         }
-        if (facebook_url != that.facebook_url) {
+        if (facebookUrl != that.facebookUrl) {
             return false;
         }
-        if (linkedin_url != that.linkedin_url) {
+        if (linkedinUrl != that.linkedinUrl) {
             return false;
         }
-        if (angellist_url != that.angellist_url) {
+        if (angellistUrl != that.angellistUrl) {
             return false;
         }
-        if (follower_count != that.follower_count) {
+        if (followerCount != that.followerCount) {
             return false;
         }
         if (investor != that.investor) {
@@ -153,14 +150,14 @@ public class AngelProfile extends AngelObject implements Serializable {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (image != null ? image.hashCode() : 0);
         result = 31 * result + (bio != null ? bio.hashCode() : 0);
-        result = 31 * result + (blog_url != null ? blog_url.hashCode() : 0);
-        result = 31 * result + (online_bio_url != null ? online_bio_url.hashCode() : 0);
-        result = 31 * result + (twitter_url != null ? twitter_url.hashCode() : 0);
-        result = 31 * result + (facebook_url != null ? facebook_url.hashCode() : 0);
-        result = 31 * result + (linkedin_url != null ? linkedin_url.hashCode() : 0);
-        result = 31 * result + (angellist_url != null ? angellist_url.hashCode() : 0);
+        result = 31 * result + (blogUrl != null ? blogUrl.hashCode() : 0);
+        result = 31 * result + (onlineBioUrl != null ? onlineBioUrl.hashCode() : 0);
+        result = 31 * result + (twitterUrl != null ? twitterUrl.hashCode() : 0);
+        result = 31 * result + (facebookUrl != null ? facebookUrl.hashCode() : 0);
+        result = 31 * result + (linkedinUrl != null ? linkedinUrl.hashCode() : 0);
+        result = 31 * result + (angellistUrl != null ? angellistUrl.hashCode() : 0);
 
-        result = 31 * result + follower_count;
+        result = 31 * result + followerCount;
 
         result = 31 * result + (investor ? 1 : 0);
         return result;

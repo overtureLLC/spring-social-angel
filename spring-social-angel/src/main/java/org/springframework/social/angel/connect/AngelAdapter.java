@@ -2,7 +2,7 @@ package org.springframework.social.angel.connect;
 
 import org.springframework.social.ApiException;
 import org.springframework.social.angel.api.Angel;
-import org.springframework.social.angel.api.AngelProfile;
+import org.springframework.social.angel.api.impl.model.AngelProfile;
 import org.springframework.social.connect.ApiAdapter;
 import org.springframework.social.connect.ConnectionValues;
 import org.springframework.social.connect.UserProfile;
@@ -25,7 +25,7 @@ public class AngelAdapter implements ApiAdapter<Angel> {
         AngelProfile profile = angelList.userOperations().getUserProfile();
         values.setProviderUserId(Long.toString(profile.getId()));
         values.setDisplayName(profile.getName());
-        values.setProfileUrl(profile.getAngellist_url());
+        values.setProfileUrl(profile.getAngellistUrl());
         values.setImageUrl(profile.getImage());
     }
 

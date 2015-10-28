@@ -1,8 +1,10 @@
 package org.springframework.social.angel.api.impl;
 
-import org.springframework.social.angel.api.Angel;
-import org.springframework.social.angel.api.AngelProfile;
-import org.springframework.social.angel.api.UserOperations;
+import org.springframework.social.angel.api.*;
+import org.springframework.social.angel.api.impl.model.AngelProfile;
+import org.springframework.social.angel.api.impl.model.AngelStartUpRole;
+import org.springframework.social.angel.api.impl.model.AngelStartUpRoleList;
+import org.springframework.social.angel.api.impl.model.PagedList;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
@@ -33,7 +35,12 @@ class UserTemplate implements UserOperations {
 
     @Override
     public AngelProfile getUserProfile(long userId) {
-        return restTemplate.getForObject("users/"+userId, AngelProfile.class);
+        return restTemplate.getForObject(angelTemplate.buildUri("/users/"+userId), AngelProfile.class);
+    }
+
+    @Override
+    public PagedList<AngelStartUpRole> getUserRoles(long userId) {
+        return restTemplate.getForObject(angelTemplate.buildUri("/users/" + String.valueOf(userId) + "/roles"), AngelStartUpRoleList.class).getList();
     }
 
     @Override

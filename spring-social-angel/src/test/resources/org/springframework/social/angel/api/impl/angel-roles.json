@@ -1,0 +1,75 @@
+{
+  "startup_roles": [
+    {
+      "id": 13180,
+      "role": "founder",
+      "created_at": "2011-03-18T00:24:29Z",
+      "started_at": "12/01/09",
+      "ended_at": null,
+      "confirmed": true,
+      "tagged": {
+        "type": "User",
+        "name": "Babak Nivi",
+        "id": 2,
+        "bio": "Founder @angellist @venture-hacks, Worked at @bessemer-venture-partners @songbird @grockit...",
+        "follower_count": 12034,
+        "angellist_url": "http://localhost:3000/nivi",
+        "image": "https://s3.amazonaws.com/photos.angel.co/users/2-medium_jpg?1307554953"
+      },
+      "startup": {
+        "id": 6702,
+        "hidden": false,
+        "community_profile": false,
+        "name": "AngelList",
+        "angellist_url": "http://localhost:3000/angellist-sucks",
+        "logo_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/6702-766d1ce00c99ce9a5c...\"",
+        "thumb_url": "https://s3.amazonaws.com/photos.angel.co/startups/i/6702-766d1ce00c99ce9a5c...\"",
+        "quality": 10,
+        "product_desc": "AngelList is a platform for startups to meet investors and talent. ",
+        "high_concept": "A platform for startups",
+        "follower_count": 3144,
+        "company_url": "http://angel.co",
+        "created_at": "2011-03-18T00:24:29Z",
+        "updated_at": "2013-02-20T22:44:55Z"
+      }
+    },
+    {
+      "id": 1040476,
+      "role": "founder",
+      "created_at": "2014-01-06T16:48:19Z",
+      "started_at": null,
+      "ended_at": null,
+      "title": null,
+      "confirmed": true,
+      "tagged": {
+        "type": "User",
+        "name": "Ryo Hang",
+        "id": 199344,
+        "bio": "I am a full stack engineer for mobile & website applications.  founder @snaapiq-1 , founder @sheetism  ",
+        "follower_count": 45,
+        "angellist_url": "https://angel.co/ryo-hang",
+        "image": "https://d1qb2nb5cznatu.cloudfront.net/users/199344-medium_jpg?1421078903"
+      },
+      "startup": {
+        "id": 318369,
+        "hidden": false,
+        "community_profile": false,
+        "name": "Snaapiq",
+        "angellist_url": "https://angel.co/snaapiq-1",
+        "logo_url": "https://d1qb2nb5cznatu.cloudfront.net/startups/i/318369-ba452b486b10c32e7d6eb64986166cee-medium_jpg.jpg?buster=1412478471",
+        "thumb_url": "https://d1qb2nb5cznatu.cloudfront.net/startups/i/318369-ba452b486b10c32e7d6eb64986166cee-thumb_jpg.jpg?buster=1412478471",
+        "quality": 5,
+        "product_desc": "Snaapiq is an engine for crowd sourced advertising. Our mobile app turns content creation into a game for consumers, who tell their stories through photo and video adventures. Adventures focus on popular and trending themes to peak consumer interests (e.g. #FashionFriday or Selfie at an Event), and can be sponsored. Agencies tap into our community of creators and gain access to targeted licensable content, crowdsourced ideas for future campaigns, and consumer analytics. By partnering with influencers, linking to social media, and creating exportable stories around every adventure, we drive rich omnichannel engagement.\n\nSnaapiq has generated nearly 200k photos and dozens of brands have activated our userbase. By partnering with Snaapiq, brands are tapping into our creative community for specific content generation, with the ability to use our web platform and social hub, rewards distribution system, and consumer behavior insights to compliment any advertising campaign.",
+        "high_concept": "Crowdsourced advertising through visual storytelling",
+        "follower_count": 18,
+        "company_url": "http://www.snaapiq.com",
+        "created_at": "2014-01-06T16:48:19Z",
+        "updated_at": "2015-04-29T16:44:36Z"
+      }
+    }
+  ],
+  "total": 2,
+  "per_page": 50,
+  "page": 1,
+  "last_page": 1
+}

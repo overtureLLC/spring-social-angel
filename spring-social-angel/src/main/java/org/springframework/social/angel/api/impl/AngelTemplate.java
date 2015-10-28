@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.social.angel.api.Angel;
+import org.springframework.social.angel.api.RoleOperations;
+import org.springframework.social.angel.api.StartUpOperations;
 import org.springframework.social.angel.api.impl.serial.AngelModule;
 import org.springframework.social.angel.api.UserOperations;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
@@ -25,12 +27,24 @@ public class AngelTemplate extends AbstractOAuth2ApiBinding implements Angel {
     private String applicationNamespace;
 
     private UserOperations userOperations;
+    private RoleOperations roleOperations;
+    private StartUpOperations startUpOperations;
     private RestOperations restOperations;
 
 
     @Override
     public UserOperations userOperations() {
         return userOperations;
+    }
+
+    @Override
+    public RoleOperations roleOperations() {
+        return roleOperations;
+    }
+
+    @Override
+    public StartUpOperations startupOperations() {
+        return startUpOperations;
     }
 
     @Override
@@ -89,6 +103,8 @@ public class AngelTemplate extends AbstractOAuth2ApiBinding implements Angel {
 
     private void initSubApis() {
         userOperations = new UserTemplate(this,getRestTemplate());
+        roleOperations = new RoleTemplate(this,getRestTemplate());
+        startUpOperations = new StartUpTemplate(this,getRestTemplate());
     }
 
 

@@ -3,10 +3,7 @@ package org.springframework.social.angel.api.impl.serial;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import org.springframework.social.angel.api.AngelProfile;
 
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,25 +19,25 @@ abstract class AngelProfileMixin extends AngelObjectMixin{
             @JsonProperty("String") String String) {}
 
     @JsonProperty("blog_url")
-    private String blog_url;
+    private String blogUrl;
 
     @JsonProperty("online_bio_url")
-    private String online_bio_url;
+    private String onlineBioUrl;
 
     @JsonProperty("twitter_url")
-    private String twitter_url;
+    private String twitterUrl;
 
     @JsonProperty("facebook_url")
-    private String facebook_url;
+    private String facebookUrl;
 
     @JsonProperty("linkedin_url")
-    private String linkedin_url;
+    private String linkedinUrl;
 
     @JsonProperty("angellist_url")
-    private String angellist_url;
+    private String angellistUrl;
 
     @JsonProperty("follower_count")
-    private int follower_count;
+    private int followerCount;
 
     @JsonProperty("investor")
     private boolean investor;
