@@ -16,7 +16,7 @@ abstract class AngelProfileMixin extends AngelObjectMixin{
             @JsonProperty("id") long id,
             @JsonProperty("name") String name,
             @JsonProperty("image") String image,
-            @JsonProperty("String") String String) {}
+            @JsonProperty("bio") String bio) {}
 
     @JsonProperty("blog_url")
     private String blogUrl;

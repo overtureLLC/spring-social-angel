@@ -1,5 +1,7 @@
 package org.springframework.social.angel.api.impl.model;
 
+import org.springframework.social.angel.api.Angel;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -30,8 +32,8 @@ public class AngelStartUp extends AngelObject implements Serializable {
     private String twitterUrl;
     private String blogUrl;
     private String videoUrl;
-    private List markets;
-    private List locations;
+    private List<AngelTag>  markets;
+    private List<AngelTag> locations;
     private List screenshots;
 
 
@@ -112,11 +114,11 @@ public class AngelStartUp extends AngelObject implements Serializable {
         return videoUrl;
     }
 
-    public List getMarkets() {
+    public List<AngelTag> getMarkets() {
         return markets;
     }
 
-    public List getLocations() {
+    public List<AngelTag> getLocations() {
         return locations;
     }
 

@@ -3,6 +3,7 @@ package org.springframework.social.angel.api.impl.serial;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.social.angel.api.impl.model.AngelTag;
 
 import java.util.Date;
 import java.util.List;
@@ -63,10 +64,10 @@ abstract class AngelStartUpMixin extends AngelObjectMixin{
     private String videoUrl;
 
     @JsonProperty("markets")
-    private List markets;
+    private List<AngelTag> markets;
 
     @JsonProperty("locations")
-    private List locations;
+    private List<AngelTag> locations;
 
     @JsonProperty("screenshots")
     private List screenshots;

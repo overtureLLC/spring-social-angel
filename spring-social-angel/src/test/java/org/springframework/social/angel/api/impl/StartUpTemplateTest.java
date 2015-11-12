@@ -27,6 +27,8 @@ public class StartUpTemplateTest extends AbstractAngelApiTest {
         assertEquals(6702, startUp.getId());
         assertNotNull(startUp.getVideoUrl());
         assertEquals(2, startUp.getMarkets().size());
+        assertEquals("MarketTag",startUp.getMarkets().get(0).getTagType());
+        assertEquals("LocationTag",startUp.getLocations().get(0).getTagType());
     }
 
 
